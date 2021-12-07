@@ -10,7 +10,7 @@ const Signup = () => {
         <>
         <h1>Create an account</h1>
         <div className="column">
-            <Illustration />
+            <Illustration pageName="signup" />
             <Form className={`${classes.signup}`}>
                 <TextInput type="text" placeholder="Enter name" icon="person" />
                 <TextInput type="text" placeholder="Enter email" icon="alternate_email" />

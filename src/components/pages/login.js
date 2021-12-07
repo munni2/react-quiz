@@ -10,7 +10,7 @@ const Login = () => {
         <>
         <h1>Login to your account</h1>
         <div className="column">
-            <Illustration />
+            <Illustration pageName="login" />
             <Form className={`${classes.login}`}>
                 <TextInput type="text" placeholder="Enter email" icon="alternate_email" />
                 <TextInput type="password" placeholder="Enter password" icon="lock" />
