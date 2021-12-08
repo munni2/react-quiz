@@ -4,6 +4,7 @@ import CheckBox from "../Checkbox";
 import Form from "../Form";
 import Illustration from "../Illustration";
 import TextInput from "../TextInput";
+import {Link} from "react-router-dom";
 
 const Signup = () => {
     return ( 
@@ -17,9 +18,9 @@ const Signup = () => {
                 <TextInput type="password" placeholder="Enter password" icon="lock" />
                 <TextInput type="password" placeholder="Confirm password" icon="lock_clock" />
                 <CheckBox  type="checkbox" text="I agree to the Terms &amp; Conditions" />
-                <Button>Submit now</Button>
+                <Button><span>Submit now</span></Button>
                 <div className="info">
-                    Already have an account? <a href="login.html">Login</a> instead.
+                    Already have an account? <Link to="/login">Login</Link> instead.
                 </div>
             </Form> 
         </div>
