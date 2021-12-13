@@ -1,8 +1,8 @@
-import Videoes from "../Videos"
+import Videos from "../Videos"
 
 const Home = () => {
     return ( 
-        <Videoes></Videoes>
+        <Videos></Videos>
     );
 }
  
