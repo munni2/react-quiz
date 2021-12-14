@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {Link, useNavigate} from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import classes from "../../styles/login.module.css";
 import Illustration from "../Illustration";
 import Form from "../Form";
@@ -15,7 +15,7 @@ const Login = () => {
     const[loading, setLoading] = useState("");
 
     const {login} = useAuth();
-    const navigate = useNavigate();
+    const history = useHistory();
 
     async function handellogin(e) {
         e.preventDefault();
@@ -24,7 +24,7 @@ const Login = () => {
             setError("");
             setLoading(true);
             await login (email, password);
-            navigate('/');
+            history.push("/");
         } catch (err) {
             console.log(err);
             setLoading(false);

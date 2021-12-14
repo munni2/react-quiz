@@ -4,7 +4,7 @@ import classes from "../styles/signup.module.css";
 import TextInput from "./TextInput";
 import Button from "./Button"
 import CheckBox from "./Checkbox";
-import { Link, useNavigate  } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import {useAuth} from "../contexts/Authcontext";
 
 const SignupForm = () => {
@@ -17,7 +17,7 @@ const SignupForm = () => {
     const[loading, setLoading] = useState("");
 
     const {signup} = useAuth();
-    const navigate = useNavigate();
+    const history = useHistory();
 
     async function handelSubmit(e) {
         e.preventDefault();
@@ -30,8 +30,7 @@ const SignupForm = () => {
             setError("");
             setLoading(true);
             await signup (email, password, username);
-            // history.push("/");
-            navigate('/');
+            history.push("/");
         } catch (err) {
             console.log(err);
             setLoading(false);
