@@ -9,6 +9,7 @@ const app = initializeApp({
     storageBucket: process.env.REACT_APP_API_storageBucket,
     messagingSenderId: process.env.REACT_APP_API_messagingsenderid,
     appId: process.env.REACT_APP_API_appId,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
 });
 
 export default app;

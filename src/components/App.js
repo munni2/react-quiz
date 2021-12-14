@@ -18,10 +18,10 @@ function App() {
             <Route exact path="/" element={<Home/>} />
             <Route exact path="/signup" element={<Signup/>} />
             <Route exact path="/login" element={<Login/>} />
-            {/* <PrivateRouter exact path="/quiz" element={<Quiz/>} /> */}
-            <Route exact path='/quiz' element={<PrivateRouter />}>
+            <Route exact path="/quiz" element={<Quiz/>} />
+            {/* <Route exact path='/quiz' element={<PrivateRouter />}>
               <Route exact path='/quiz' element={<Quiz/>}/>
-            </Route>
+            </Route> */}
             <Route exact path='/result' element={<PrivateRouter />}>
               <Route exact path='/result' element={<Result/>}/>
             </Route>
