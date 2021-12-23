@@ -8,7 +8,7 @@ const Nav = () => {
         <nav className={classes.nav}>
             <ul>
                 <li>
-                    <Link to="/" className={classes.brand}>
+                    <Link to="/react-quiz" className={classes.brand}>
                         <img src={logo} alt="Learn something new" />
                         <h3>Site Name</h3>
                     </Link>
