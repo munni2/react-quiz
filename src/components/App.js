@@ -16,7 +16,7 @@ function App() {
       <AuthProvider>
         <Layout>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/react-quiz" component={Home} />
             <PublicRoute exact path="/signup" component={Signup} />
             <PublicRoute exact path="/login" component={Login} />
             <PrivateRoute exact path="/quiz" component={Quiz} />
