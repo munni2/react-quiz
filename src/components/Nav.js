@@ -9,8 +9,8 @@ const Nav = () => {
             <ul>
                 <li>
                     <Link to="/" className={classes.brand}>
-                        <img src={logo} alt="Learn with Sumit Logo" />
-                        <h3>Quiz</h3>
+                        <img src={logo} alt="Learn something new" />
+                        <h3>Site Name</h3>
                     </Link>
                 </li>
             </ul>
